@@ -1,0 +1,13 @@
+# monitoring/wordpress-monitor.yaml
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: wordpress-monitor
+  labels:
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: wordpress
+  endpoints:
+  - port: http
