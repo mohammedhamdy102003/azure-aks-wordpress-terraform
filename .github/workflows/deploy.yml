@@ -11,7 +11,7 @@ jobs:
       ACR_NAME: "wpacr2026ultimate" # 
       IMAGE_NAME: "custom-wordpress"
       RESOURCE_GROUP: "wp-final-project-rg"
-      AKS_CLUSTER: "wp-aks-cluster-final"
+      AKS_CLUSTER: "wp-aks-cluster"
 
     steps:
       - name: Checkout code
